@@ -1,0 +1,34 @@
+<%- include('layouts/header'); -%>
+
+<main class="main">
+    <div class="go-back">
+        <h2>Computer Science Books</h2>
+        <a class="btn btn-sm btn-success" href="/categories">Go back to Categories</a>
+    </div>
+    <div class="table-responsive">
+        <table class="table table-hover">
+            <thead>
+                <tr>
+                    <th>Title</th>
+                    <th>Author</th>
+                    <th>Price</th>
+                    <th>Category</th>
+                </tr>
+            </thead>
+            <tbody>
+                <% for (let i = 0; i < model.length; i++) { %>
+                    <% if (model[i].category === 'Computer Science') { %>
+                        <tr>
+                            <td><%= model[i].title %></td>
+                            <td><%= model[i].author %></td>
+                            <td><%= model[i].price %></td>
+                            <td><%= model[i].category %></td>
+                        </tr>
+                    <% } %>
+                <% } %>
+            </tbody>
+        </table>
+    </div>
+</main>
+
+<%- include('layouts/footer'); -%>

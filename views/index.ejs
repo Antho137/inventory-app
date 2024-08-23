@@ -1,0 +1,23 @@
+<%- include('layouts/header'); -%>
+
+<main class="main">
+    <h2>IT Books Inventory</h2> 
+    <div class="homepage">
+        <div class="nav">
+            <ul>
+                <li><a class="btn btn-sm btn-success" href="/books">Books</a></li>
+                <li><a class="btn btn-sm btn-success" href="/categories">Categories</a></li>
+            </ul>
+        </div>
+        <p>The <a class="links" href="/categories">Categories</a> link shows the page which displays all categories of the inventory. Each category link displays an appropriate page.</p>
+        <p>The <a class="links" href="/books">Books</a> link shows the page which displays the table of books in the database. The table contains three buttons link: Add, Edit and Delete.</p>
+        
+        <ol>
+            <li><strong>Add</strong>: this displays the page with the entry form for adding a new book in the books table. Clicking the Save button validates the entered data and redirects the user to the books table.</li>
+            <li><strong>Edit</strong>: this displays the page with the form that contains the record to modify. By clicking the Update button, the data entered is validated, and the record is updated in the books table. </li>
+            <li><strong>Delete</strong>: this displays the page with the information of the selected book to allow the user to confirm its deletion. The form input fields are readonly. Clicking the Delete button confirms the action.</li>
+        </ol>
+    </div>
+</main>
+
+<%- include('layouts/footer'); -%>

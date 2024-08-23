@@ -1,0 +1,188 @@
+.container-fluid {
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    background-color: #F0F8FF;
+}
+
+.header {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 2;
+    padding: 10px;
+}
+
+.header h1 {
+    margin: 0;
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+.brand {
+    font-size: 1.25rem;
+    font-weight: 400;
+    color: #fff;
+    text-decoration: none;
+}
+
+.brand:hover, .nav li a:hover {
+    color: #ffff00;
+}
+
+.main {
+    position: relative;
+    top: 80px;
+}
+
+.main h2 {
+    margin: 30px 0 0;
+    font-weight: 400;
+    text-align: center;
+}
+
+.homepage {
+    margin: 0 auto;
+}
+
+.homepage p {
+    text-align: center;
+}
+
+.homepage p, .homepage li {
+    line-height: 1.2;
+}
+
+.nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px auto;
+}
+
+.nav li {
+    padding: 0 8px;
+    list-style: none;
+}
+
+.nav li a {
+    color: #fff;
+    text-decoration: none;
+    padding-top: 0;
+}
+
+.links {
+    color: #0000ff;
+    text-decoration: none;
+}
+
+.button .btn {
+    margin-bottom: 5px;
+}
+
+table td:nth-child(4), table th:nth-child(4) {
+    text-align: center;
+}
+
+.categories {
+    margin: 20px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.categories h2 {
+    margin-bottom: 10px;
+}
+
+.categories li a {
+    text-decoration: none;
+}
+
+.go-back {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.go-back a {
+    margin-top: 30px;
+    margin-left: 100px;
+}
+
+footer {
+    position: relative;
+    top: 70px;
+    text-align: center;
+    font-weight: 500;
+    padding: 10px 0 0;
+}
+
+footer p {
+    margin: 0;
+}
+
+@media (min-width: 600px) {
+    .homepage {
+        width: 80%;
+        font-size: 1.125rem;
+    }
+
+    form {
+        margin: 20px auto;
+        padding: 0 100px;
+    }
+
+    .form-group {
+        margin: 10px 0;
+    }
+}
+
+@media (min-width: 910px) {
+    .homepage {
+        width: 70%;
+    }
+
+    form {
+        margin: 30px auto;
+        padding: 0 150px;
+    }
+}
+
+@media (min-width: 992px) {
+
+    .homepage {
+        width: 60%;
+    }
+
+    .table-responsive {
+        padding: 20px 50px;
+    }
+
+    .button .btn {
+        margin-bottom: 0;
+    }
+
+    form {
+        padding: 0 170px;
+    }  
+}
+
+@media (min-width: 1280px) {
+
+    .homepage {
+        width: 50%;
+    }
+
+    form {
+        padding: 0 200px;
+    }
+
+    .table-responsive {
+        padding: 20px 100px;
+    }    
+}
